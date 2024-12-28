@@ -54,7 +54,7 @@ def halo_status():
 # TeamSpeak 3 voice port status (UDP port)
 @app.route('/teamspeak/udp', methods=['GET'])
 def teamspeak_udp_status():
-    server_ip = "your-teamspeak-server-ip"  # Replace with your TeamSpeak server IP
+    server_ip = "220.253.154.62"  # Replace with your TeamSpeak server IP
     server_port = 9987  # Default TeamSpeak UDP port
     query_packet = b"ping"  # TeamSpeak query packet
 
