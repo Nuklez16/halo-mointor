@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  halo-monitor:
+    build:
+      context: . # Use the current directory where Dockerfile is located
+    container_name: halo-monitor
+    ports:
+      - "5000:5000" # Expose the Flask application on port 5000
+    restart: always # Ensure the container restarts on failures or reboots
